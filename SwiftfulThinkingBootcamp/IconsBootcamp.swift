@@ -9,7 +9,18 @@ import SwiftUI
 
 struct IconsBootcamp: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        var imageColor = Color(#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1))
+        Image(systemName: "gauge.with.dots.needle.bottom.50percent.badge.plus")
+            .renderingMode(.original)
+            .resizable()
+//            .aspectRatio(contentMode: .fill)
+//            .scaledToFit()
+            .scaledToFill()
+//            .font(.largeTitle)
+//            .font(.system(size: 200))
+            .foregroundColor(imageColor)
+            .frame(width: 300, height: 300)
+//            .clipped()
     }
 }
 
