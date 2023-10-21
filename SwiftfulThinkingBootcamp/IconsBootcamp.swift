@@ -9,7 +9,7 @@ import SwiftUI
 
 struct IconsBootcamp: View {
     var body: some View {
-        var imageColor = Color(#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1))
+        let imageColor = Color(#colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1))
         Image(systemName: "gauge.with.dots.needle.bottom.50percent.badge.plus")
             .renderingMode(.original)
             .resizable()
