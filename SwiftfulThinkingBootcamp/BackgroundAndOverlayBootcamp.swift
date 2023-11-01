@@ -52,9 +52,9 @@ struct BackgroundAndOverlayBootcamp: View {
 //                , alignment: .bottomTrailing
 //            )
         
-        var colorStart = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
-        var colorEnd = Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
-        var colorShadow = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.5))
+        let colorStart = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))
+        let colorEnd = Color(#colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1))
+        let colorShadow = Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 0.5))
         
         Image(systemName: "heart.fill")
             .font(.system(size: 40))
