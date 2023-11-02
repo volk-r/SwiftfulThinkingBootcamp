@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct SafeArea: View {
+    
+    // TODO: - The background is now extending to the edges of the device without having to specify ignore safe area.
+    
     var body: some View {
         ScrollView {
             VStack {
