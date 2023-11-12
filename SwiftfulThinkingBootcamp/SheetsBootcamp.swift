@@ -39,7 +39,7 @@ struct SheetsBootcamp: View {
 
 struct SecondScreen: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack(alignment: .topLeading) {
@@ -47,7 +47,7 @@ struct SecondScreen: View {
                 .ignoresSafeArea()
             
             Button {
-                presentationMode.wrappedValue.dismiss()
+                dismiss()
             } label: {
                 Image(systemName: "xmark")
                     .foregroundColor(.white)

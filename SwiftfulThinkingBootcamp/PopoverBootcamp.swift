@@ -58,7 +58,7 @@ struct PopoverBootcamp: View {
 
 struct NewScreen: View {
     // METHOD 1 - SHEET
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     // METHOD 2 - TRANSITION
     @Binding var showNewScreen: Bool
     
@@ -69,7 +69,7 @@ struct NewScreen: View {
             
             Button {
                 // METHOD 1 - SHEET
-//                presentationMode.wrappedValue.dismiss()
+//                dismiss()
                 // METHOD 2 - TRANSITION
                 showNewScreen.toggle()
             } label: {
