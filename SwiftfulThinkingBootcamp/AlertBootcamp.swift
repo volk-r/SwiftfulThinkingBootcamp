@@ -56,6 +56,9 @@ struct AlertBootcamp: View {
 //                    backgroundColor = .red
 //                }
                 Button("Ok", role: .cancel) {
+                    if alertType == .success {
+                        backgroundColor = .green
+                    }
                 }
             } message: {
                 Text(alertType?.alertDescription.message ?? "Something went wrong")
