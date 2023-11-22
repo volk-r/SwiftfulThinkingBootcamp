@@ -29,20 +29,20 @@ struct DatePickerBootcamp: View {
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
             
             
-            //        DatePicker("Select a Date", selection: $selectedDate)
-            //        DatePicker("Select a date", selection: $selectedDate, displayedComponents: [.date, .hourAndMinute])
-                    DatePicker(selection: $selectedDate,
-                               in: startingDate...endingDate,
-                               displayedComponents: [.date],
-                               label: {
-                        Text("Select a date")
-                    })
-                        .tint(.red)
-                        .datePickerStyle(
-                            CompactDatePickerStyle()
-            //                GraphicalDatePickerStyle()
-            //                WheelDatePickerStyle()
-                        )
+    //        DatePicker("Select a Date", selection: $selectedDate)
+    //        DatePicker("Select a date", selection: $selectedDate, displayedComponents: [.date, .hourAndMinute])
+            DatePicker(selection: $selectedDate,
+                       in: startingDate...endingDate,
+                       displayedComponents: [.date],
+                       label: {
+                Text("Select a date")
+            })
+                .tint(.red)
+                .datePickerStyle(
+                    CompactDatePickerStyle()
+    //                GraphicalDatePickerStyle()
+    //                WheelDatePickerStyle()
+                )
         }
     }
 }
