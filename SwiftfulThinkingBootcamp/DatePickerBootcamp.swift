@@ -27,8 +27,6 @@ struct DatePickerBootcamp: View {
             Text("SELECTED DATE IS:")
             Text(dateFormatter.string(from: selectedDate))
                 .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-            
-            
     //        DatePicker("Select a Date", selection: $selectedDate)
     //        DatePicker("Select a date", selection: $selectedDate, displayedComponents: [.date, .hourAndMinute])
             DatePicker(selection: $selectedDate,
