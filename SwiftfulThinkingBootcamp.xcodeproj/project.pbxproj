@@ -32,6 +32,8 @@
 		3C2969A32B1E3EAC00B242A1 /* ViewModelBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2969A22B1E3EAC00B242A1 /* ViewModelBootcamp.swift */; };
 		3C2969A52B1F886C00B242A1 /* EnvironmentObjectBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2969A42B1F886C00B242A1 /* EnvironmentObjectBootcamp.swift */; };
 		3C3285D32B20DC2100E08449 /* AppStorageBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C3285D22B20DC2100E08449 /* AppStorageBootcamp.swift */; };
+		3C36F3DC2B22315400323C6F /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36F3DB2B22315400323C6F /* IntroView.swift */; };
+		3C36F3DE2B2237B100323C6F /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C36F3DD2B2237B100323C6F /* OnboardingView.swift */; };
 		3C406B642B08F64D00CC12AB /* TextfieldBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C406B632B08F64D00CC12AB /* TextfieldBootcamp.swift */; };
 		3C406B662B09048900CC12AB /* TextEditorBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C406B652B09048900CC12AB /* TextEditorBootcamp.swift */; };
 		3C406B682B0A81FB00CC12AB /* ToggleBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C406B672B0A81FB00CC12AB /* ToggleBootcamp.swift */; };
@@ -90,6 +92,8 @@
 		3C2969A22B1E3EAC00B242A1 /* ViewModelBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelBootcamp.swift; sourceTree = "<group>"; };
 		3C2969A42B1F886C00B242A1 /* EnvironmentObjectBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnvironmentObjectBootcamp.swift; sourceTree = "<group>"; };
 		3C3285D22B20DC2100E08449 /* AppStorageBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageBootcamp.swift; sourceTree = "<group>"; };
+		3C36F3DB2B22315400323C6F /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
+		3C36F3DD2B2237B100323C6F /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		3C406B632B08F64D00CC12AB /* TextfieldBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextfieldBootcamp.swift; sourceTree = "<group>"; };
 		3C406B652B09048900CC12AB /* TextEditorBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorBootcamp.swift; sourceTree = "<group>"; };
 		3C406B672B0A81FB00CC12AB /* ToggleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleBootcamp.swift; sourceTree = "<group>"; };
@@ -134,6 +138,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C36F3DA2B22311800323C6F /* OnboardingViews */ = {
+			isa = PBXGroup;
+			children = (
+				3C36F3DB2B22315400323C6F /* IntroView.swift */,
+				3C36F3DD2B2237B100323C6F /* OnboardingView.swift */,
+			);
+			path = OnboardingViews;
+			sourceTree = "<group>";
+		};
 		3C9BBC6E2ADAEC8C006FE992 = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +219,7 @@
 				3C2969A22B1E3EAC00B242A1 /* ViewModelBootcamp.swift */,
 				3C2969A42B1F886C00B242A1 /* EnvironmentObjectBootcamp.swift */,
 				3C3285D22B20DC2100E08449 /* AppStorageBootcamp.swift */,
+				3C36F3DA2B22311800323C6F /* OnboardingViews */,
 				3C9BBC7E2ADAEC8E006FE992 /* Assets.xcassets */,
 				3C9BBC802ADAEC8E006FE992 /* Preview Content */,
 			);
@@ -313,6 +327,7 @@
 				3CAD82542AF8E1330075D162 /* ConditionalBootcamp.swift in Sources */,
 				3C265DEA2B03DC0D00E39C8E /* AlertBootcamp.swift in Sources */,
 				3C1AF0DF2AED4B610062EDD8 /* InitializerBootcamp.swift in Sources */,
+				3C36F3DC2B22315400323C6F /* IntroView.swift in Sources */,
 				3C1C1FC42AF2B98300E46CF7 /* SafeAreaBootcamp.swift in Sources */,
 				3C406B6A2B0D143C00CC12AB /* PickerBootcamp.swift in Sources */,
 				3C265DDE2AFBF65D00E39C8E /* AnimationTimingBootcamp.swift in Sources */,
@@ -332,6 +347,7 @@
 				3C406B702B0FB2D200CC12AB /* StepperBootcamp.swift in Sources */,
 				3C265DE42AFFC13900E39C8E /* PopoverBootcamp.swift in Sources */,
 				3C406B6C2B0E66A300CC12AB /* ColorPickerBootcamp.swift in Sources */,
+				3C36F3DE2B2237B100323C6F /* OnboardingView.swift in Sources */,
 				3CB907192AE82F3900E50AB6 /* StacksBootcamp.swift in Sources */,
 				3CAD82522AF8D1490075D162 /* BindingBootcamp.swift in Sources */,
 				3C6C964B2B1223F400D5BC34 /* SliderBootcamp.swift in Sources */,
