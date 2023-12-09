@@ -16,10 +16,24 @@ struct OnboardingView: View {
      3 - Add gender
      */
     @State var onboarindState: Int = 0
+    let transition: AnyTransition = .asymmetric(
+        insertion: .move(edge: .trailing),
+        removal: .move(edge: .leading))
     
+    // onboarding inputs
     @State var name: String = ""
     @State var age: Double = 50
     @State var gender: String = ""
+    
+    // for the alert
+    @State var alertTitle: String = ""
+    @State var showAlert: Bool = false
+    
+    // app storage
+    @AppStorage("name") var currentUserName: String?
+    @AppStorage("age") var currentUserAge: Int?
+    @AppStorage("gender") var currentUserGender: String?
+    @AppStorage("sign_in") var currentUserSignedIn: Bool = false
     
     var body: some View {
         ZStack {
@@ -28,12 +42,16 @@ struct OnboardingView: View {
                 switch onboarindState {
                 case 0:
                     welcomeSection
+                        .transition(transition)
                 case 1:
                     addNameSection
+                        .transition(transition)
                 case 2:
                     addAgeSection
+                        .transition(transition)
                 case 3:
                     addGenderSection
+                        .transition(transition)
                 default:
                     RoundedRectangle(cornerRadius: 20)
                         .foregroundStyle(Color.green)
@@ -47,6 +65,11 @@ struct OnboardingView: View {
             }
             .padding(30)
         }
+        .alert(
+            Text(alertTitle),
+            isPresented: $showAlert) {
+        } message: {
+        }
     }
 }
 
@@ -55,15 +78,27 @@ struct OnboardingView: View {
 extension OnboardingView {
     
     private var bottomButtom: some View {
-        Text("Sign in")
+        Text(
+            onboarindState == 0 ? "SIGN UP" :
+            onboarindState == 3 ? "FINISH" :
+            "NEXT"
+        )
             .font(.headline)
             .foregroundStyle(.purple)
             .frame(height: 55)
             .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
             .background(Color.white)
             .clipShape(RoundedRectangle(cornerRadius: 10))
+            // disable animation - DEPRECATED
+//            .animation(nil)
+            // disable animation - v.1
+//            .animation(nil, value: UUID())
+            // disable animation - v.2
+            .transaction { transaction in
+                transaction.animation = nil
+            }
             .onTapGesture {
-                
+                handleNextButtonPressed()
             }
     }
     
@@ -143,7 +178,7 @@ extension OnboardingView {
                 .foregroundStyle(.white)
             
             Menu {
-                Picker(selection: $gender, label: Text("Filter")) {
+                Picker(selection: $gender, label: Text("Select a gender")) {
                     Text("Male").tag("Male")
                     Text("Female").tag("Female")
                 }
@@ -169,6 +204,47 @@ extension OnboardingView {
 
 extension OnboardingView {
     
+    func handleNextButtonPressed() {
+        // CHECK INPUTS
+        switch onboarindState {
+        case 1:
+            guard name.count >= 3 else {
+                showAlert(title: "Your name must be at least 3 characters long! 😫")
+                return
+            }
+        case 3:
+            guard gender.count > 1 else {
+                showAlert(title: "Please select a gender before moving forward! 😳")
+                return
+            }
+            break
+        default:
+            break
+        }
+        
+        // GO TO NEXT SECTION
+        if (onboarindState == 3) {
+            signIn()
+        } else {
+            withAnimation(.spring()) {
+                onboarindState += 1
+            }
+        }
+    }
+    
+    func signIn() {
+        currentUserName = name
+        currentUserAge = Int(age)
+        currentUserGender = gender
+        withAnimation(.spring()) {
+            currentUserSignedIn = true
+        }
+    }
+    
+    func showAlert(title: String) {
+        alertTitle = title
+        showAlert.toggle()
+    }
 }
 
 #Preview {

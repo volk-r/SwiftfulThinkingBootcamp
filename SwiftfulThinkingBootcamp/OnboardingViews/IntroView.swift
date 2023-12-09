@@ -22,12 +22,15 @@ struct IntroView: View {
                 startRadius: 5,
                 endRadius: screenSize?.height ?? 0)
             .ignoresSafeArea()
+            
+            if currentUserSignedIn {
+                ProfileView()
+                    .transition(.asymmetric(insertion: .move(edge: .bottom), removal: .move(edge: .top)))
+            } else {
+                OnboardingView()
+                    .transition(.asymmetric(insertion: .move(edge: .top), removal: .move(edge: .bottom)))
+            }
         }
-        
-        // if user is signed in
-        // profile view
-        // else
-        // onboarding view
     }
 }
 
