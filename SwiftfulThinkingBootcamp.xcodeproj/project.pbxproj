@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C0DA07A2B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C0DA0792B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift */; };
 		3C1AF0DF2AED4B610062EDD8 /* InitializerBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AF0DE2AED4B610062EDD8 /* InitializerBootcamp.swift */; };
 		3C1AF0E12AEE5E520062EDD8 /* ForEachBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AF0E02AEE5E520062EDD8 /* ForEachBootcamp.swift */; };
 		3C1AF0E32AEE677E0062EDD8 /* ScrollViewBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C1AF0E22AEE677E0062EDD8 /* ScrollViewBootcamp.swift */; };
@@ -69,6 +70,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3C0DA0792B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundMaterialsBootcamp.swift; sourceTree = "<group>"; };
 		3C1AF0DE2AED4B610062EDD8 /* InitializerBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerBootcamp.swift; sourceTree = "<group>"; };
 		3C1AF0E02AEE5E520062EDD8 /* ForEachBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForEachBootcamp.swift; sourceTree = "<group>"; };
 		3C1AF0E22AEE677E0062EDD8 /* ScrollViewBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewBootcamp.swift; sourceTree = "<group>"; };
@@ -226,6 +228,7 @@
 				3C3285D22B20DC2100E08449 /* AppStorageBootcamp.swift */,
 				3C36F3DA2B22311800323C6F /* OnboardingViews */,
 				3C7F7DB82B26061600824BC6 /* AsyncImageBootcamp.swift */,
+				3C0DA0792B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift */,
 				3C9BBC7E2ADAEC8E006FE992 /* Assets.xcassets */,
 				3C9BBC802ADAEC8E006FE992 /* Preview Content */,
 			);
@@ -357,6 +360,7 @@
 				3C406B6C2B0E66A300CC12AB /* ColorPickerBootcamp.swift in Sources */,
 				3C36F3DE2B2237B100323C6F /* OnboardingView.swift in Sources */,
 				3CB907192AE82F3900E50AB6 /* StacksBootcamp.swift in Sources */,
+				3C0DA07A2B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift in Sources */,
 				3CAD82522AF8D1490075D162 /* BindingBootcamp.swift in Sources */,
 				3C6C964B2B1223F400D5BC34 /* SliderBootcamp.swift in Sources */,
 				3C265DDC2AFAA05400E39C8E /* AnimationBootcamp.swift in Sources */,
