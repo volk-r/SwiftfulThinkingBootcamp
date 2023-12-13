@@ -69,6 +69,7 @@
 		3CBCC2BE2AE198B400705845 /* IconsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBCC2BD2AE198B400705845 /* IconsBootcamp.swift */; };
 		3CF7DFB52AE4280900A7F564 /* ImageBootvamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DFB42AE4280900A7F564 /* ImageBootvamp.swift */; };
 		3CF7DFB72AE582D100A7F564 /* FrameBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF7DFB62AE582D100A7F564 /* FrameBootcamp.swift */; };
+		3CF8900C2B2A1EF000D5EE0D /* ListSwipeActionsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CF8900B2B2A1EF000D5EE0D /* ListSwipeActionsBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,7 @@
 		3CBCC2BD2AE198B400705845 /* IconsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconsBootcamp.swift; sourceTree = "<group>"; };
 		3CF7DFB42AE4280900A7F564 /* ImageBootvamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageBootvamp.swift; sourceTree = "<group>"; };
 		3CF7DFB62AE582D100A7F564 /* FrameBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameBootcamp.swift; sourceTree = "<group>"; };
+		3CF8900B2B2A1EF000D5EE0D /* ListSwipeActionsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListSwipeActionsBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 				3C0DA0792B2780BC0058E021 /* BackgroundMaterialsBootcamp.swift */,
 				3C0DA07B2B2785610058E021 /* TextSelectionBootcamp.swift */,
 				3C6981892B28C97600C7AD7E /* ButtonStylesBootcamp.swift */,
+				3CF8900B2B2A1EF000D5EE0D /* ListSwipeActionsBootcamp.swift */,
 				3C9BBC7E2ADAEC8E006FE992 /* Assets.xcassets */,
 				3C9BBC802ADAEC8E006FE992 /* Preview Content */,
 			);
@@ -379,6 +382,7 @@
 				3C9BBC7B2ADAEC8C006FE992 /* SwiftfulThinkingBootcampApp.swift in Sources */,
 				3C265DE82B028C9400E39C8E /* ListBootcamp.swift in Sources */,
 				3CBCC2BE2AE198B400705845 /* IconsBootcamp.swift in Sources */,
+				3CF8900C2B2A1EF000D5EE0D /* ListSwipeActionsBootcamp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
